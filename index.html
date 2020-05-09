@@ -11,17 +11,17 @@
         <input type="text" placeholder="Lastname" required="text">
         <input type="email" placeholder="Email" required="email">
         <input type="password" id="p1" placeholder="Password" required="password">
-        <input type="password" id="p2" placeholder="Confirm Password" required="password">
+        <input type="password" id="p2" placeholder="Confirm Password" required="password" onblur="validatePassword()">
 
         <div>
             <input type="radio" name="gender" id="male"><label for="male">Male</label>
             <input type="radio" name="gender" id="female"><label for="female">Female</label>
         </div>
 
-        <input type="checkbox" name=""> AGREE TERMS & CONDITION<br>
+        <input type="checkbox" id="cb" > AGREE TERMS & CONDITION<br>
+        <button type="button" id="sub" onclick="validateForm()">SUBMIT</button>
 
     </form>
     <script src="file.js"></script>
-    <button id="sub" onclick="validate()">SUBMIT</button>
 </body>
 </html>
